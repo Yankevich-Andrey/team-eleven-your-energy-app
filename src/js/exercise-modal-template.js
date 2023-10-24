@@ -1,4 +1,4 @@
-import { capitalizeFirstLetter } from './fn-helpers';
+import { capitalizeFirstLetter } from '../components/fn-helpers';
 
 export function renderExerciseModal({
   bodyPart,
@@ -81,6 +81,18 @@ export function renderExerciseModal({
 <button type="button" class="exercise-modal-button__rating">
               Give a rating
             </button>
-            </li>
-          </ul>`;
+            </li></ul>
+            <div class="exercise-modal-button-card_remove"> <button
+                type="button"
+                class="exercise-modal-button__remove">
+                Remove from favorites
+                <span>
+                  <svg class="exercise-modal-button__remove-icon">
+                      <use href="./img/icons.svg#icon-trash" width="20" height="20"></use>
+                  </svg>
+                </span>
+              </button>
+              </div>
+
+          <div>`;
 }
